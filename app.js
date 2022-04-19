@@ -30,7 +30,7 @@ function upload() {
       console.log(res.data.msg);
     })
     .catch((error) => {
-      console.log(error);
+      console.log("上传错误");
     });
 }
 setInterval(upload, 2000)
