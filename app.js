@@ -13,6 +13,8 @@ function upload() {
     temp: Random.integer(20, 80),
     algae_finish: Random.integer(0, 100),
     algae_weight: Random.integer(0, 20),
+    longitude:113.032091,
+    latitude: 28.236334,
     status: 1,
   });
   console.log("上传的数据", data);
@@ -23,7 +25,7 @@ function upload() {
     headers: {
       "Content-Type": "application/json",
       Authorization:
-        "Basic ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFhV1FpT2pZc0luTmpiM0JsSWpvNExDSnBZWFFpT2pFMk5UQXpNekU0T1RJc0ltVjRjQ0k2TVRZMU1EUXhPREk1TW4wLktDTk5udmZwTWdpWjFMUFN5QW5XZ3pYLVFET1VRSUxhN05TMkVINnZKVW86",
+        "Basic ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SjFhV1FpT2pFeExDSnpZMjl3WlNJNk9Dd2lhV0YwSWpveE5qVXdOREl6TnpreExDSmxlSEFpT2pFMk5UQTFNVEF4T1RGOS50cjB4djBBRURPVFpjeWlQSVVfc1BrcXpCb2xTTS1BekVkX29qZXpCbGxnOg==",
     },
   })
     .then((res) => {
